@@ -38,5 +38,5 @@ Node, Express, MongoDB, Google OAuth Authentication, Heroku.
 - Patent the app idea
 
 ## Project Planning
-- Trello and wireframes forthcoming.
+Trello: https://trello.com/invite/b/G5EBooYj/ATTI9cad68d0979dfe18ab3e7d76fb8e22e7BCABBEB9/snow-link-app 
 
