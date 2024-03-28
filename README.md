@@ -33,6 +33,7 @@ Node, Express, MongoDB, OAuth Authentication, Heroku.
 - Users can view others in their radius and message them directly.
 - Users can plan for upcoming trips and create saved lists of events they want to attend.
 - Business such as ski resorts themselves, restaurants, bars, etc can create business accounts where they pay to boost their events in have more visibility and turn out. Think Yelp.
+- Patent the app idea
 
 ## Project Planning
 - Trello and wireframes forthcoming.
