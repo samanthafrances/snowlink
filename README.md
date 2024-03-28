@@ -1,8 +1,8 @@
 # Snow Link
-Snow Link is a full-stack CRUD app for the ski & snowboard community. Users are able to create an account and browse events in their ski-resort radius.
+Snow Link is a full-stack CRUD app for the ski & snowboard community. Users are able to create an account and browse activities to do in their current ski-resort radius.
 
 ## The Stack
-Node, Express, MongoDB, OAuth Authentication, Heroku. 
+Node, Express, MongoDB Mongoose, Google OAuth Authentication, Heroku. 
 
 ## MVP 
 - Frontend: Simple UI that allows users to navigate, create, view, and manage events, and also create and update their profile using authentication.
@@ -30,9 +30,10 @@ Node, Express, MongoDB, OAuth Authentication, Heroku.
 - PUT /profiles/{profile-id}: Updates an existing user profile in the database.
 
 ## Post-MVP
-- Users can view others in their radius and message them directly.
-- Users can plan for upcoming trips and create saved lists of events they want to attend.
-- Business such as ski resorts themselves, restaurants, bars, etc can create business accounts where they pay to boost their events in have more visibility and turn out. Think Yelp.
+- Enable users to add events to their Calender
+- Enable users to view others in their radius and message them directly.
+- Enable users to plan for upcoming trips and create saved lists of events they want to attend.
+- Enable business such as ski resorts themselves, restaurants, bars, etc. to create business accounts where they pay to boost their events in have more visibility and attendance.
 - Patent the app idea
 
 ## Project Planning
