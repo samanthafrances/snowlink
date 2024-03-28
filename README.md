@@ -1,5 +1,5 @@
 # Snow Link
-Snow Link is a full-stack CRUD app for the ski & snowboard community. Users are able to create an account, make a profile, and browse events in their ski-resort radius.
+Snow Link is a full-stack CRUD app for the ski & snowboard community. Users are able to create an account and browse events in their ski-resort radius.
 
 ## The Stack
 Node, Express, MongoDB, OAuth Authentication, Heroku. 
