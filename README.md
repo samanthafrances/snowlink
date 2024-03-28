@@ -30,10 +30,10 @@ Node, Express, MongoDB Mongoose, Google OAuth Authentication, Heroku.
 - PUT /profiles/{profile-id}: Updates an existing user profile in the database.
 
 ## Post-MVP
-- Enable users to add events to their Calender
+- Enable users to add events to their calender.
 - Enable users to view others in their radius and message them directly.
-- Enable users to plan for upcoming trips and create saved lists of events they want to attend.
-- Enable business such as ski resorts themselves, restaurants, bars, etc. to create business accounts where they pay to boost their events in have more visibility and attendance.
+- Enable users to plan for upcoming trips and create saved lists.
+- Enable business such as ski resorts themselves, restaurants, bars, etc. to create business accounts where they pay to boost their events and have more visibility and attendance.
 - Patent the app idea
 
 ## Project Planning
