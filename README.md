@@ -2,16 +2,16 @@
 Snow Link is a full-stack CRUD app for the ski & snowboard community. Users are able to create an account, make a profile, and browse events in their ski-resort radius.
 
 ## The Stack
-Node, Express, MongoDB, OAuth Authentication, arcGIS, Heroku. 
+Node, Express, MongoDB, OAuth Authentication, Heroku. 
 
 ## MVP 
 - Frontend: Simple UI that allows users to navigate, create, view, and manage events, and also create and update their profile using authentication.
 - Backend: Node.js server built with Express that handles user requests, and manages data.
 - Database: MongoDB collection that stores event data, user data, and authentication information.
-- Geolocation: Enable the app to provide events in the user's area using a geolocation API.
+- Geolocation: Enable the app to provide events in the user's area using user's geolocation.
 
 ## User Journey
-- Fetch user's geolocation using a 3rd party API.
+- Fetch user's geolocation using their browser IP.
 - Query the nearest events using the geospatial index on the backend.
 - Display available meet-up events around the user's location.
 
