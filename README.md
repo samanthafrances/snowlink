@@ -1,5 +1,5 @@
 # Snow Link
-Snow Link is a full-stack CRUD app for the ski & snowboard community. Users are able to create an account, browse events, and add events based on their location.
+Snow Link is a full-stack app for the ski & snowboard community. Users are able to create an account, browse events, and add keep track of events they're interested in attending. 
 
 ## The Stack
 Node, Express, MongoDB, Google OAuth Authentication, Heroku. 
@@ -11,23 +11,25 @@ Node, Express, MongoDB, Google OAuth Authentication, Heroku.
 - Geolocation: Enable the app to provide events in the user's area using user's geolocation.
 
 ## User Journey
-- Fetch user's geolocation using their browser IP.
-- Query the nearest events using the geospatial index on the backend.
-- Display available meet-up events around the user's location.
+- The user lands on the splash page, which prompts them to log in with their Google account.
+- After logging in, the user is redirected to the events page, which displays a list of events with unique IDs.
+- The user can click on a specific event to view its details page.
+- If the user wants to keep track of an event, they can add it to their list of favorite events. The POST request to /events/{event-id}/favorite will store the event in the user's profile for later reference.
+- The user can view their list of favorite events by navigating to the "Favorite Events" page.
+- If the user wants to update or delete a favorited event, they can use the PUT and DELETE requests to /favorite-events/{event-id}.
+- If the user wants to log out, they can navigate to the "Logout" page, which will end their session.
 
 ## Routes
-- GET /signup: Displays the sign-up view for users to create a new account.
-- POST /signup: Creates a new user account, authenticates the user, and redirects to an authenticated route (e.g. /me, /events).
-- GET /login: Displays the login view for users to authenticate.
-- POST /login: Authenticates the user and redirects to an authenticated route (e.g. /me, /events).
-- GET /logout: Logs the user out and redirects to a non-authenticated route (e.g. /login).
-- GET /events: Fetches the list of events from the database based on user's geolocation.
-- GET /events/{event-id}: Fetches an event detail based on the specific event ID.
-- POST /events: Creates a new event in the database.
-- PUT /events/{event-id}: Updates an existing event in the database.
-- DELETE /events/{event-id}: Deletes an existing event from the database.
-- GET /profiles/{profile-id}: Fetches the user profile.
-- PUT /profiles/{profile-id}: Updates an existing user profile in the database.
+- GET /: Displays the splash page, which directs the user to the Google authentication page.
+- GET /google-auth: Handles the Google authentication process and logs the user in.
+- GET /events: Fetches the list of events with unique IDs and displays them to the user.
+- GET /events/{event-id}: Fetches the details page of a specific event.
+- POST /events/{event-id}/favorite: Adds the event to the user's list of favorited events.
+- GET /favorite-events: Fetches the list of favorited events for the user.
+- PUT /favorite-events/{event-id}: Updates the favorited event for the user.
+- DELETE /favorite-events/{event-id}: Deletes the favorited event from the user's list.
+- GET /logout: Logs the user out and redirects to the splash page.
+
 
 ## Post-MVP
 - Add React
