@@ -7,6 +7,9 @@
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <title><%= title %></title>
   <script src="https://kit.fontawesome.com/fd49e9d991.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav>
@@ -14,13 +17,13 @@
     <a href="/events/index" <%- title === 'UPCOMING EVENTS'? 'class="active"' : '' %>>
       <i class="fas fa-link"></i>
     </a>
-    <a href="/events/new" <%- title === 'SUBMIT EVENT'? 'class="active"' : '' %>>
+    <a href="events/new" <%- title === 'SUBMIT EVENT'? 'class="active"' : '' %>>
       <i class="fas fa-plus"></i>
     </a>
-    <a href="/user/favorites" <%- title === 'MY FAVORITES'? 'class="active"' : '' %>>
+    <a href="user/favorites" <%- title === 'MY FAVORITES'? 'class="active"' : '' %>>
       <i class="fas fa-heart"></i>
     </a>
-    <a href="/user/index" <%- title === 'MY PROFILE'? 'class="active"' : '' %>>
+    <a href="user/index" <%- title === 'MY PROFILE'? 'class="active"' : '' %>>
       <i class="fas fa-user"></i>
     </a>
     <% if (user) { %>
@@ -34,4 +37,3 @@
     <% } %>
   </nav>
   <main>
-    <h1><%= title %></h1>
