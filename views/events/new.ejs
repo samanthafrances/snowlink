@@ -2,16 +2,20 @@
 
 <form id="new-form" action="/events" method="POST">
   <label>Event Name:</label>
-  <input type="text" name="Event Name">
+  <input type="text" name="Event Name" required>
   <label>Date:</label>
-  <input type="text" name="date">
+  <input type="date" name="date" required>
+  <label>Time:</label>
+  <input type="time" name="time" min="00:00" max="23:59" required>
   <label>Location:</label>
-  <select name="location">
+  <select name="location" required>
     <option value="Big Bear, CA">Big Bear, CA</option>
     <option value="Wrightwood, CA">Wrightwood, CA</option>
     <option value="Mammoth Lakes, CA">Mammoth Lakes, CA</option>
     <option value="Lake Tahoe, CA">Lake Tahoe, CA</option>
   </select>
+  <label>Details:</label>
+  <input type="text" name="details" required>
   <input type="submit" value="Submit Event">
 </form>
 
