@@ -14,6 +14,7 @@ require('./config/passport');
 const indexRouter = require('./routes/index');
 const eventsRouter = require('./routes/events');
 const commentsRouter = require('./routes/comments');
+const favoritesRouter = require('./routes/favorites')
 
 var app = express();
 

@@ -1,4 +1,6 @@
 const Event = require('../models/event');
+const commentsCtrl = require('../controllers/comments');
+
 
 async function deleteComment(req, res) {
   const event = await Event.findOne({ 'comments._id': req.params.id, 'comments.user': req.user._id });
