@@ -7,7 +7,7 @@ Node, Express, MongoDB, Google OAuth Authentication, Heroku.
 ## MVP 
 - Frontend: Simple UI that allows users to navigate, create, view, and manage events, and also create and update their profile using authentication.
 - Backend: Node.js server built with Express that handles user requests, and manages data.
-- Database: MongoDB collection that stores event data, user data, and authentication information.
+- Database: MongoDB Mongoose collection that stores event data, user data, and authentication information.
 
 ## User Journey
 - User lands on splash page that promts them to create an account with Google
@@ -20,13 +20,13 @@ Node, Express, MongoDB, Google OAuth Authentication, Heroku.
 
 
 ## Post-MVP
-- Add Google maps api to event detail page.
+- Add Google maps API to event detail page.
 - Add React.
 - Enable the app to provide events in the user's area using user's geolocation.
 - Enable users to add events to their google calender.
 - Enable users to view others in their radius and message them directly.
-- Enable users to plan for upcoming trips and create saved lists.
-- Enable business such as ski resorts themselves, restaurants, bars, etc. to create business accounts where they pay to boost their events and have more visibility and attendance.
+- Enable paid banner ads to monetize app.
+- Enable business such as ski resorts, restaurants, bars, etc. to create business accounts where they pay to boost their events and have more visibility and attendance.
 
 ## Credits
 - Mountain photo: TAMARA SUSA/ASPEN SNOWMASS
