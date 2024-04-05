@@ -189,12 +189,11 @@ input[type="submit"] {
     grid-column: 2 / 3;
   }
 
-
   #add-to-favorites-container {
     display: flex;
     justify-content: center;
     margin-top: 2em;
-    margin-bottom: 2em;
+
   }
   
   button#add-to-favorites {
@@ -209,10 +208,8 @@ input[type="submit"] {
     cursor: pointer;
     width: 100%;
     max-width: 300px;
-    margin-left: 30em;
   }
   
-
   #add-comment-form {
     grid-column: 1 / 4;
   }

@@ -18,7 +18,11 @@
  
 </section>
 
-<button id="add-to-favorites">ADD TO MY FAVORITES LIST</button>
+<div id="add-to-favorites-container">
+  <button id="add-to-favorites">
+    <i class="fas fa-heart"></i>
+  </button>
+</div>
 
 <form id="add-comment-form" method="POST"
   action="/events/<%= event._id %>/comments">
