@@ -1,13 +1,13 @@
 <%- include('../partials/header') %>
 
+<h1>UPCOMING EVENTS</h1>
 <table id="list">
   <thead>
     <tr>
-      <th>Event Name</th>
-      <th>Date</th>
-      <th>Time</th>
-      <th>Location</th>
-      <th>Details</th>
+      <th>EVENT NAME</th>
+      <th>DATE</th>
+      <th>LOCATION</th>
+    
     </tr>
   </thead>
   <tbody>
@@ -15,10 +15,10 @@
       <tr>
         <td><%= m.eventName %></td>
         <td><%= m.date %></td>
-        <td><%= m.time %></td>
+       
         <td><%= m.location %></td>
-        <td><%= m.details %></td>
-        <td><a href="/events/<%= m._id %>">VIEW</a></td>
+   
+        <td><a href="/events/<%= m._id %>"><i class="fa-solid fa-eye"></i></a></td>
       </tr>
       <% }); %>
     </tbody>

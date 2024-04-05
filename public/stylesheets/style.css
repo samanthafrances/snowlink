@@ -48,6 +48,17 @@ nav > a.active {
   color: white;
   cursor: default;
 }
+nav a.logo {
+  width: 200px;
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin-right: 20px;
+}
 
 .login {
   display: flex;
@@ -140,5 +151,8 @@ input[type="submit"] {
 @media (min-width: 600px) {
   form {
     max-width: 600px;
+  }
+  nav a.logo {
+    max-width: 200px;
   }
 }

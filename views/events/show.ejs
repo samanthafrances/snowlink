@@ -5,8 +5,12 @@
   <div><%= event.eventName %></div>
   <div>Date: </div>
   <div><%= event.date %></div>
-  <div>Attending?: </div>
-  <div><%= event.attending %></div>
+  <div>Time: </div>
+  <div><%= event.time %></div>
+  <div>Location: </div>
+  <div><%= event.location %></div>
+  <div>Details</div>: </div>
+  <div><%= event.details %></div>
  
 </section>
 
@@ -15,12 +19,6 @@
   action="/events/<%= event._id %>/comments">
   <label>Comment:</label>
   <textarea name="content"></textarea>
-  <label>Attending?:</label>
-  <select name="attending">
-    <option value="yes">yes</option>
-    <option value="no">no</option>
-    <option value="maybe">maybe</option>
-  </select>
   <input type="submit" value="Add Comment">
 </form>
 
@@ -31,7 +29,6 @@
         <th>User</th>
         <th>Date</th>
         <th>Comment</th>
-        <th>Attending</th>
         <th></th>
       </tr>
     </thead>
