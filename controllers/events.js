@@ -3,7 +3,6 @@ const User = require('../models/user');
 
 const index = async (req, res) => {
   const events = await Event.find({});
-  console.log (events);
   res.render('events/index', { title: 'Upcoming Events', events });
 };
 
@@ -13,15 +12,13 @@ const newEvent = (req, res) => {
 
 const show = async (req, res) => {
   const event = await Event.findById(req.params.id);
-  console.log (event);
   res.render('events/show', { title: `${event.name} Details`, event });
 };
 
 const create = async (req, res) => {
   req.body.attending =!!req.body.attending;
-  console.log (req.body);
 
-  for (let key in req.body) {
+  for (let key in req.body) {s
     if (req.body[key] === '') delete req.body[key];
   }
   try {
