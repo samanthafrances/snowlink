@@ -32,7 +32,7 @@ const commentSchema = new Schema({
     },
     location: {
       type: String,
-      enum: ['Big Bear, CA', 'Wrightwood, CA', 'Mammoth Lakes, CA', 'Lake Tahoe, CA']
+      enum: ['Bear Mountain, CA', 'Mount High, CA', 'Mammoth Lakes, CA', 'Palisades Tahoe, CA', 'Park City, UT', 'Vail, CO', 'Deer Valley Resort, UT', 'Aspen Snowmass, CO', 'Breckenridge, CO', 'Telluride, CO', 'Big Sky Resort, CO', 'Jackson Hole, WY']
     },
     details: { type: String, required: true },
     comments: [commentSchema]

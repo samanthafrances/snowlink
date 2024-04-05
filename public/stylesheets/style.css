@@ -45,7 +45,7 @@ nav > a:hover:not(.active) {
 }
 
 nav > a.active {
-  color: white;
+  color: rgb(33, 90, 134);
   cursor: default;
 }
 nav a.logo {
@@ -120,10 +120,6 @@ td {
 th {
   text-align: left;
   font-weight: bold;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
 }
 
 
