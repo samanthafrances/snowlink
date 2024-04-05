@@ -13,19 +13,19 @@
 </head>
 <body>
   <nav>
-    <a href="/events" <%- title === 'UPCOMING EVENTS'? 'class="active"' : '' %>>
-      <i class="fas fa-link"></i>
-    </a>
-    <a href="events/new" <%- title === 'SUBMIT EVENT'? 'class="active"' : '' %>>
-      <i class="fas fa-plus"></i>
-    </a>
-    <a href="user/favorites" <%- title === 'MY FAVORITES'? 'class="active"' : '' %>>
-      <i class="fas fa-heart"></i>
-    </a>
-    <a href="" <%- title === 'MY PROFILE'? 'class="active"' : '' %>>
-      <i class="fas fa-user"></i>
-    </a>
     <% if (user) { %>
+      <a href="/events" <%- title === 'UPCOMING EVENTS'? 'class="active"' : '' %>>
+        <i class="fas fa-link"></i>
+      </a>
+      <a href="events/new" <%- title === 'SUBMIT EVENT'? 'class="active"' : '' %>>
+        <i class = "fas fa-plus"></i>
+      </a>
+      <a href="" <%- title === 'MY FAVORITES'? 'class="active"' : '' %>>
+        <i class="fas fa-heart"></i>
+      </a>
+      <a href="" <%- title === 'MY PROFILE'? 'class="active"' : '' %>>
+        <i class="fas fa-user"></i>
+      </a>
       <a href="/logout">
         <i class="fas fa-sign-out-alt"></i>
       </a>

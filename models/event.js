@@ -25,16 +25,16 @@ const commentSchema = new Schema({
   const eventSchema = new Schema({
     eventName: { type: String, required: true },
     date: {
-      type: Number,
-      default: function() {
-        return new Date().getFullYear();
-      },
-      min: 2024
+      type: String,
+    },
+    time: {
+      type: String,
     },
     location: {
       type: String,
       enum: ['Big Bear, CA', 'Wrightwood, CA', 'Mammoth Lakes, CA', 'Lake Tahoe, CA']
     },
+    details: { type: String, required: true },
     comments: [commentSchema]
   }, {
     timestamps: true
