@@ -31,7 +31,8 @@ Node, Express, MongoDB, Google OAuth Authentication, Heroku.
 
 
 ## Post-MVP
-- Add React
+- Add Google maps api to event detail page.
+- Add React.
 - Enable the app to provide events in the user's area using user's geolocation.
 - Enable users to add events to their google calender.
 - Enable users to view others in their radius and message them directly.

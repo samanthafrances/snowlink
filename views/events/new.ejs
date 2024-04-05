@@ -1,12 +1,16 @@
 <%- include('../partials/header') %>
-
+<h1>SUBMIT EVENT</h1>
 <form id="new-form" action="/events" method="POST">
   <label>Event Name:</label>
   <input type="text" name="eventName" required>
   <label>Date:</label>
-  <input type="date" name="date" required>
-  <label>Time:</label>
-  <input type="time" name="time" min="00:00" max="23:59" required>
+  <input type="date" name="date" required dateStyle="short">
+  <label>Start Time:</label>
+  <input type="time" name="startTime" min="00:00" max="23:59" required>
+  <label>End Time:</label>
+  <input type="time" name="endTime" min="00:00" max="23:59" required>
+  <label>Address:</label>
+  <input type="address" name="address" required>
   <label>Location:</label>
   <select name="location" required>
     <option value="Bear Mountain, CA">Bear Mountain, CA</option>
@@ -24,6 +28,8 @@
   </select>
   <label>Details:</label>
   <input type="text" name="details" required>
+  <label>Link:</label>
+  <input type="link" name="link" required>
   <input type="submit" value="Submit Event">
 </form>
 

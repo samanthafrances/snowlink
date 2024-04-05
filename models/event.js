@@ -23,18 +23,39 @@ const commentSchema = new Schema({
   });
   
   const eventSchema = new Schema({
-    eventName: { type: String, required: true },
-    date: {
+    eventName: {
       type: String,
+      required: true
     },
-    time: {
+    date: {
+      type: Date,
+      required: true
+    },
+    startTime: {
       type: String,
+      required: true
+    },
+    endTime: {
+      type: String,
+      required: true
+    },
+    address: {
+      type: String,
+      required: true
     },
     location: {
       type: String,
-      enum: ['Bear Mountain, CA', 'Mount High, CA', 'Mammoth Lakes, CA', 'Palisades Tahoe, CA', 'Park City, UT', 'Vail, CO', 'Deer Valley Resort, UT', 'Aspen Snowmass, CO', 'Breckenridge, CO', 'Telluride, CO', 'Big Sky Resort, CO', 'Jackson Hole, WY']
+      enum: ['Bear Mountain, CA', 'Mount High, CA', 'Mammoth Mountain, CA', 'Palisades Tahoe, CA', 'Park City, UT', 'Vail, CO', 'Deer Valley Resort, UT', 'Aspen Snowmass, CO', 'Breckenridge, CO', 'Telluride, CO', 'Big Sky Resort, CO', 'Jackson Hole, WY'],
+      required: true
     },
-    details: { type: String, required: true },
+    details: {
+      type: String,
+      required: true
+    },
+    link: {
+      type: String,
+      required: true
+    },
     comments: [commentSchema]
   }, {
     timestamps: true

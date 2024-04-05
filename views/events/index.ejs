@@ -1,23 +1,19 @@
 <%- include('../partials/header') %>
-
+<h1>UPCOMING EVENTS</h1>
 <table id="list">
   <thead>
     <tr>
       <th>EVENT NAME</th>
       <th>DATE</th>
-    
       <th>LOCATION</th>
-
     </tr>
   </thead>
   <tbody>
     <% events.forEach(function(m) { %>
       <tr>
         <td><%= m.eventName %></td>
-        <td><%= m.date %></td>
-      
+        <td><%= new Date(m.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) %></td>
         <td><%= m.location %></td>
-
         <td><a href="/events/<%= m._id %>"><i class="fa-solid fa-eye"></i></a></td>
       </tr>
       <% }); %>
