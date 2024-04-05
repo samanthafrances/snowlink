@@ -18,17 +18,6 @@ Node, Express, MongoDB, Google OAuth Authentication, Heroku.
 - If the user wants to update or delete a favorited event, they can use the PUT and DELETE requests to /favorite-events/{event-id}.
 - If the user wants to log out, they can navigate to the "Logout" page, which will end their session.
 
-## Routes
-- GET /: Displays the splash page, which directs the user to the Google authentication page.
-- GET /google-auth: Handles the Google authentication process and logs the user in.
-- GET /events: Fetches the list of events with unique IDs and displays them to the user.
-- GET /events/{event-id}: Fetches the details page of a specific event.
-- POST /events/{event-id}/favorite: Adds the event to the user's list of favorited events.
-- GET /favorite-events: Fetches the list of favorited events for the user.
-- PUT /favorite-events/{event-id}: Updates the favorited event for the user.
-- DELETE /favorite-events/{event-id}: Deletes the favorited event from the user's list.
-- GET /logout: Logs the user out and redirects to the splash page.
-
 
 ## Post-MVP
 - Add Google maps api to event detail page.
@@ -42,8 +31,8 @@ Node, Express, MongoDB, Google OAuth Authentication, Heroku.
 ## Credits
 - Mountain photo: TAMARA SUSA/ASPEN SNOWMASS
 
-
 ## Project Planning
+- [Heroku]()
 - [Trello](https://trello.com/invite/b/G5EBooYj/ATTI9cad68d0979dfe18ab3e7d76fb8e22e7BCABBEB9/snow-link-app)
 - [Figma](https://www.figma.com/file/DDU7ntXzqq366bkk0iZ9pL/Snowlink-App?type=whiteboard&node-id=0%3A1&t=RtijtPATjOeKULPJ-1)
 
