@@ -9,16 +9,17 @@
   <div><%= event.startTime %></div>
   <div>End Time: </div>
   <div><%= event.endTime %></div>
-  <div>address: </div>
+  <div>Address: </div>
   <div><%= event.address %></div>
   <div>Location: </div>
   <div><%= event.location %></div>
-  <div>Details</div>: </div>
+  <div>Details:</div>
   <div><%= event.details %></div>
  
 </section>
 
-<br><br><h2>Comments</h2>
+<button id="add-to-favorites">ADD TO MY FAVORITES LIST</button>
+
 <form id="add-comment-form" method="POST"
   action="/events/<%= event._id %>/comments">
   <label>Comment:</label>
