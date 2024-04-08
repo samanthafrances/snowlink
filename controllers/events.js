@@ -18,7 +18,7 @@ const show = async (req, res) => {
 const create = async (req, res) => {
   req.body.attending =!!req.body.attending;
 
-  for (let key in req.body) {s
+  for (let key in req.body) {
     if (req.body[key] === '') delete req.body[key];
   }
   try {
